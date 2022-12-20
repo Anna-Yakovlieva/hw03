@@ -48,50 +48,49 @@ p {
 .container {
   margin: 0 auto;
   width: 1158px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
   outline: 2px solid tomato;
 }
 .section {
-  /* min-width: 1200px; */
   padding-top: 120px;
   padding-bottom: 120px;
 }
 .container ul {
   display: flex;
 }
+
+/* Header */
+
+.header {
+  padding: 24px 0;
+  box-shadow: 1px solid #ececec;
+}
+
 .container .header-nav {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 header .container {
   display: flex;
   align-items: center;
 }
 .site-nav {
   display: flex;
-  margin-left: 93px;
 }
 .site-nav .item + .item {
   margin-left: 40px;
 }
 .contact-nav {
   display: flex;
-  margin-left: 200px;
+  margin-left: auto;
 }
 .contact-nav .contacts-item + .contacts-item {
   margin-left: 40px;
 }
 
-/* footer ul {
-  flex-direction: column;
-} */
-
-/* Header */
-header {
-  border: 1px solid #ececec;
-}
 .header-nav {
   color: var(--title-text-color);
 }
@@ -145,10 +144,12 @@ header {
 }
 
 /* Hero */
-.hero-section {
-  padding: 192px 474px 290px;
+.hero {
+  padding: 192px 0;
   background-color: var(--background-color);
+  text-align: center;
 }
+
 .hero-container {
   display: flex;
   flex-direction: column;
@@ -162,10 +163,13 @@ header {
   text-align: center;
   letter-spacing: 0.02em;
 
+  width: 500px;
+
   color: var(--light-color);
   background-color: var(--background-color);
 
-  margin-bottom: 48px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .hero-btn {
   font-weight: 600;
@@ -201,9 +205,9 @@ header {
 }
 
 /* Features */
-/* .features-section {
-  justify-content: space-between;
-} */
+.features {
+  padding-bottom: 0;
+}
 
 .features-item {
   margin-right: 24px;
@@ -232,15 +236,12 @@ header {
 /* Working */
 
 .main-title {
-  display: flex;
   font-weight: 600;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-
-  justify-content: center;
 
   color: var(--title-text-color);
 
@@ -266,6 +267,12 @@ header {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
+  margin-top: 32px;
+}
+
+.team-box {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .team-description {
   font-weight: 400;
@@ -286,17 +293,9 @@ header {
 /* Footer */
 
 .footer {
-  /* padding: 100px 1020px 100px 156px; */
-  background-color: var(--background-color);
-}
-
-.footer-section {
-  padding: 100px 0;
   background-color: var(--background-color);
   display: flex;
-}
-.footer-container {
-  margin: 0 auto;
+  padding: 100px 0;
 }
 
 .footer-logo {
