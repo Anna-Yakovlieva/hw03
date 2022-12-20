@@ -45,6 +45,12 @@ p {
   padding: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
   margin: 0 auto;
   width: 1158px;
@@ -64,7 +70,8 @@ p {
 
 .header {
   padding: 24px 0;
-  box-shadow: 1px solid #ececec;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .container .header-nav {
@@ -170,6 +177,7 @@ header .container {
 
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 48px;
 }
 .hero-btn {
   font-weight: 600;
@@ -267,7 +275,7 @@ header .container {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
-  margin-top: 32px;
+  margin-bottom: 8px;
 }
 
 .team-box {
@@ -285,6 +293,9 @@ header .container {
 }
 .team-item {
   margin-right: 24px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 .team-list li:last-of-type {
   margin-right: 0;
@@ -294,19 +305,19 @@ header .container {
 
 .footer {
   background-color: var(--background-color);
-  display: flex;
+
   padding: 100px 0;
 }
 
 .footer-logo {
+  display: block;
+
   font-family: "Raleway";
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.16;
 
-  display: flex;
-  align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--secondary-bgc);
@@ -328,11 +339,15 @@ header .container {
 
 /* Portfolio */
 
+.portfolio {
+  padding-bottom: 96px;
+}
+
 .portfolio-btn-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 96px 0 72px;
+  margin-bottom: 72px;
 }
 
 .portfolio-btn {
